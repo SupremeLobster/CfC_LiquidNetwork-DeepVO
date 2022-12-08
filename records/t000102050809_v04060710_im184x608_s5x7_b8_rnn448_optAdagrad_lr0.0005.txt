@@ -1,0 +1,49 @@
+
+==================================================
+n_processors: 8
+data_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\
+image_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\sequences\
+pose_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\poses\
+train_video: ['00', '01', '02', '05', '08', '09']
+valid_video: ['04', '06', '07', '10']
+partition: None
+resize_mode: rescale
+img_w: 608
+img_h: 184
+img_means: -0.1389521052731338
+img_means_np: 92.0672126539245
+img_stds: 0.2911982605213023
+img_stds_np: 74.25555314703192
+minus_point_5: True
+seq_len: (5, 7)
+sample_times: 1
+train_data_info_path: datainfo/train_df_t000102050809_v04060710_pNone_seq5x7_sample1.pickle
+valid_data_info_path: datainfo/valid_df_t000102050809_v04060710_pNone_seq5x7_sample1.pickle
+rnn_hidden_size: 448
+conv_dropout: (0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.5)
+rnn_dropout_out: 0.5
+rnn_dropout_between: 0
+clip: None
+batch_norm: True
+epochs: 250
+batch_size: 8
+pin_mem: True
+optim: {'opt': 'Adagrad', 'lr': 0.0005}
+pretrained_flownet: None
+resume: False
+resume_t_or_v: .train
+load_model_path: models/t000102050809_v04060710_im184x608_s5x7_b8_rnn448_optAdagrad_lr0.0005.model.train
+load_optimizer_path: models/t000102050809_v04060710_im184x608_s5x7_b8_rnn448_optAdagrad_lr0.0005.optimizer.train
+record_path: records/t000102050809_v04060710_im184x608_s5x7_b8_rnn448_optAdagrad_lr0.0005.txt
+save_model_path: models/t000102050809_v04060710_im184x608_s5x7_b8_rnn448_optAdagrad_lr0.0005.model
+save_optimzer_path: models/t000102050809_v04060710_im184x608_s5x7_b8_rnn448_optAdagrad_lr0.0005.optimizer
+==================================================
+Epoch 1
+train loss mean: 4.618072225044726, std: 22.94
+valid loss mean: 0.289768988778303, std: 0.06
+Epoch 2
+train loss mean: 1.1337435984816162, std: 0.22
+valid loss mean: 0.16532632348301646, std: 0.03
+Epoch 3
+train loss mean: 0.8095165786569211, std: 0.15
+valid loss mean: 0.1386220823604982, std: 0.03

@@ -1,0 +1,8 @@
+*.docx
+CfC/
+dataset/
+DeepVO-pytorch/
+.git/
+.idea/
+.ipynb_checkpoints/
+__pycache__/

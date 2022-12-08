@@ -1,0 +1,40 @@
+
+==================================================
+n_processors: 0
+data_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\
+image_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\sequences\
+pose_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\poses\
+train_video: ['00', '01', '02', '05', '08', '09']
+valid_video: ['04', '06', '07', '10']
+partition: None
+resize_mode: rescale
+img_w: 608
+img_h: 184
+img_means: -0.1389521052731338
+img_means_np: 92.0672126539245
+img_stds: 0.2911982605213023
+img_stds_np: 74.25555314703192
+minus_point_5: True
+seq_len: (7, 7)
+sample_times: 1
+train_data_info_path: datainfo/train_df_t000102050809_v04060710_pNone_seq7x7_sample1.pickle
+valid_data_info_path: datainfo/valid_df_t000102050809_v04060710_pNone_seq7x7_sample1.pickle
+rnn_hidden_size: 448
+conv_dropout: (0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.5)
+rnn_dropout_out: 0.5
+rnn_dropout_between: 0
+clip: None
+batch_norm: True
+epochs: 250
+batch_size: 8
+pin_mem: False
+optim: {'opt': 'Adagrad', 'lr': 0.0005}
+pretrained_flownet: None
+resume: False
+resume_t_or_v: .train
+load_model_path: models/t000102050809_v04060710_im184x608_s7x7_b8_rnn448_optAdagrad_lr0.0005.model.train
+load_optimizer_path: models/t000102050809_v04060710_im184x608_s7x7_b8_rnn448_optAdagrad_lr0.0005.optimizer.train
+record_path: records/t000102050809_v04060710_im184x608_s7x7_b8_rnn448_optAdagrad_lr0.0005.txt
+save_model_path: models/t000102050809_v04060710_im184x608_s7x7_b8_rnn448_optAdagrad_lr0.0005.model
+save_optimzer_path: models/t000102050809_v04060710_im184x608_s7x7_b8_rnn448_optAdagrad_lr0.0005.optimizer
+==================================================
