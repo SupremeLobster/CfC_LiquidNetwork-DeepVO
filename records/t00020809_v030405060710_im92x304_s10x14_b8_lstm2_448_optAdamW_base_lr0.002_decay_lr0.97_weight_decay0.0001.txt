@@ -1,0 +1,790 @@
+
+==================================================
+n_processors: 4
+data_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\
+image_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\sequences\
+pose_dir: C:\Users\vilad\OneDrive - campus.udg.edu\Documents [UdG-GEINF]\2022-2023\Tècniques Avançades d'Intel·ligència Artifcial [P.Inf]\Projecte\dataset\dataset\poses\
+train_video: ['00', '02', '08', '09']
+valid_video: ['03', '04', '05', '06', '07', '10']
+partition: None
+resize_mode: rescale
+img_w: 304
+img_h: 92
+img_means: -0.1389521052731338
+img_means_np: 92.0672126539245
+img_stds: 0.2911982605213023
+img_stds_np: 74.25555314703192
+minus_point_5: True
+seq_len: (10, 14)
+sample_times: 1
+train_data_info_path: datainfo/train_df_t00020809_v030405060710_pNone_seq10x14_sample1.pickle
+valid_data_info_path: datainfo/valid_df_t00020809_v030405060710_pNone_seq10x14_sample1.pickle
+rnn_hidden_size: 448
+conv_dropout: (0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.5)
+rnn_dropout_out: 0.5
+rnn_dropout_between: 0
+clip: None
+batch_norm: True
+epochs: 250
+batch_size: 8
+pin_mem: True
+optim: {'opt': 'AdamW', 'base_lr': 0.002, 'decay_lr': 0.97, 'weight_decay': 0.0001}
+pretrained_flownet: None
+resume: False
+resume_t_or_v: .train
+load_model_path: models/t00020809_v030405060710_im92x304_s10x14_b8_lstm2_448_optAdamW_base_lr0.002_decay_lr0.97_weight_decay0.0001.model.train
+load_optimizer_path: models/t00020809_v030405060710_im92x304_s10x14_b8_lstm2_448_optAdamW_base_lr0.002_decay_lr0.97_weight_decay0.0001.optimizer.train
+record_path: records/t00020809_v030405060710_im92x304_s10x14_b8_lstm2_448_optAdamW_base_lr0.002_decay_lr0.97_weight_decay0.0001.txt
+save_model_path: models/t00020809_v030405060710_im92x304_s10x14_b8_lstm2_448_optAdamW_base_lr0.002_decay_lr0.97_weight_decay0.0001.model
+save_optimzer_path: models/t00020809_v030405060710_im92x304_s10x14_b8_lstm2_448_optAdamW_base_lr0.002_decay_lr0.97_weight_decay0.0001.optimizer
+==================================================
+Epoch 1
+train loss mean: 4.4570333820260215, std: 32.12
+valid loss mean: 0.12502380319033998, std: 0.03
+Epoch 2
+train loss mean: 0.1273385480180115, std: 0.05
+valid loss mean: 0.06586254746476307, std: 0.02
+Epoch 3
+train loss mean: 0.10557428403885778, std: 0.05
+valid loss mean: 0.07132201556917987, std: 0.02
+Epoch 4
+train loss mean: 0.10415423904618103, std: 0.05
+valid loss mean: 0.11439981580346445, std: 0.04
+Epoch 5
+train loss mean: 0.10121289865967042, std: 0.04
+valid loss mean: 0.06466870908212813, std: 0.02
+Epoch 6
+train loss mean: 0.09456446751238343, std: 0.04
+valid loss mean: 0.11779245375832424, std: 0.02
+Epoch 7
+train loss mean: 0.10550068907752008, std: 0.05
+valid loss mean: 0.13695867293620412, std: 0.03
+Epoch 8
+train loss mean: 0.08490774378983561, std: 0.04
+valid loss mean: 0.06842859428894671, std: 0.02
+Epoch 9
+train loss mean: 0.09069157431939405, std: 0.04
+valid loss mean: 0.23187965192372287, std: 0.03
+Epoch 10
+train loss mean: 0.09610028098710997, std: 0.05
+valid loss mean: 0.22976395412336423, std: 0.03
+Epoch 11
+train loss mean: 0.09809799036178403, std: 0.04
+valid loss mean: 0.07933622975892658, std: 0.02
+Epoch 12
+train loss mean: 0.0777175806150465, std: 0.03
+valid loss mean: 0.061250190097319926, std: 0.02
+Epoch 13
+train loss mean: 0.09259611818783298, std: 0.05
+valid loss mean: 0.05812990779788056, std: 0.02
+Epoch 14
+train loss mean: 0.0724989286551397, std: 0.03
+valid loss mean: 0.06857710939985287, std: 0.03
+Epoch 15
+train loss mean: 0.07831508951808164, std: 0.03
+valid loss mean: 0.09441740263866473, std: 0.03
+Epoch 16
+train loss mean: 0.08464838105984433, std: 0.04
+valid loss mean: 0.08219985654459724, std: 0.03
+Epoch 17
+train loss mean: 0.09032230083635467, std: 0.04
+valid loss mean: 0.16624703324293788, std: 0.04
+Epoch 18
+train loss mean: 0.08479171758238783, std: 0.04
+valid loss mean: 0.10555671438386169, std: 0.03
+Epoch 19
+train loss mean: 0.08106152307309077, std: 0.04
+valid loss mean: 0.10562587343156338, std: 0.04
+Epoch 20
+train loss mean: 0.0900307691427405, std: 0.05
+valid loss mean: 0.062729266672572, std: 0.03
+Epoch 21
+train loss mean: 0.10423627990983918, std: 0.05
+valid loss mean: 0.17806631553022167, std: 0.05
+Epoch 22
+train loss mean: 0.09703047491030065, std: 0.05
+valid loss mean: 0.09426564397879794, std: 0.03
+Epoch 23
+train loss mean: 0.07174460805149492, std: 0.03
+valid loss mean: 0.09734607568081421, std: 0.03
+Epoch 24
+train loss mean: 0.07716339212022498, std: 0.03
+valid loss mean: 0.06771030974916264, std: 0.03
+Epoch 25
+train loss mean: 0.07658093719336087, std: 0.04
+valid loss mean: 0.07638620698376547, std: 0.03
+Epoch 26
+train loss mean: 0.08246899591368473, std: 0.03
+valid loss mean: 0.06319533915647978, std: 0.02
+Epoch 27
+train loss mean: 0.06963662101613904, std: 0.03
+valid loss mean: 0.08779825770025011, std: 0.03
+Epoch 28
+train loss mean: 0.07755799882091627, std: 0.04
+valid loss mean: 0.05833201499396487, std: 0.02
+Epoch 29
+train loss mean: 0.07219519318934686, std: 0.03
+valid loss mean: 0.0671110701146005, std: 0.02
+Epoch 30
+train loss mean: 0.07455522809066102, std: 0.03
+valid loss mean: 0.07003888763675961, std: 0.03
+Epoch 31
+train loss mean: 0.07151306715018735, std: 0.03
+valid loss mean: 0.07786810855510869, std: 0.03
+Epoch 32
+train loss mean: 0.11149911144134884, std: 0.06
+valid loss mean: 0.08357463272500641, std: 0.03
+Epoch 33
+train loss mean: 0.08843316853849474, std: 0.04
+valid loss mean: 0.09990025757328619, std: 0.04
+Epoch 34
+train loss mean: 0.0760283074759973, std: 0.03
+valid loss mean: 0.06391080402875249, std: 0.02
+Epoch 35
+train loss mean: 0.09187238536284355, std: 0.06
+valid loss mean: 0.07448674148962467, std: 0.02
+Epoch 36
+train loss mean: 0.07193302134509215, std: 0.03
+valid loss mean: 0.07532909762444376, std: 0.03
+Epoch 37
+train loss mean: 0.07719414627659106, std: 0.03
+valid loss mean: 0.08307409404387957, std: 0.03
+Epoch 38
+train loss mean: 0.06316064126388042, std: 0.03
+valid loss mean: 0.055348704722297346, std: 0.02
+Epoch 39
+train loss mean: 0.06549463230380398, std: 0.03
+valid loss mean: 0.06377329837672319, std: 0.02
+Epoch 40
+train loss mean: 0.056431026409887626, std: 0.02
+valid loss mean: 0.09334209650943551, std: 0.03
+Epoch 41
+train loss mean: 0.06697334356962921, std: 0.03
+valid loss mean: 0.08123550078348268, std: 0.03
+Epoch 42
+train loss mean: 0.06503164183772253, std: 0.03
+valid loss mean: 0.06347555292275132, std: 0.02
+Epoch 43
+train loss mean: 0.07803648378990011, std: 0.03
+valid loss mean: 0.09538501930199092, std: 0.02
+Epoch 44
+train loss mean: 0.07835089125319156, std: 0.04
+valid loss mean: 0.07712806883869291, std: 0.03
+Epoch 45
+train loss mean: 0.056792211451171755, std: 0.02
+valid loss mean: 0.058023258595715596, std: 0.03
+Epoch 46
+train loss mean: 0.06566271470290815, std: 0.03
+valid loss mean: 0.06699847347468516, std: 0.03
+Epoch 47
+train loss mean: 0.06446491992714519, std: 0.03
+valid loss mean: 0.055984087842457654, std: 0.02
+Epoch 48
+train loss mean: 0.06161008771888153, std: 0.03
+valid loss mean: 0.06500808599911913, std: 0.03
+Epoch 49
+train loss mean: 0.0702748047020621, std: 0.03
+valid loss mean: 0.0745421571161928, std: 0.03
+Epoch 50
+train loss mean: 0.059515254399153644, std: 0.03
+valid loss mean: 0.05834140909151941, std: 0.02
+Epoch 51
+train loss mean: 0.05934897448287574, std: 0.02
+valid loss mean: 0.07213204721861248, std: 0.03
+Epoch 52
+train loss mean: 0.058949653237701176, std: 0.03
+valid loss mean: 0.07264634943272494, std: 0.02
+Epoch 53
+train loss mean: 0.059440909589300615, std: 0.02
+valid loss mean: 0.06608225145860563, std: 0.02
+Epoch 54
+train loss mean: 0.05984536837228758, std: 0.02
+valid loss mean: 0.057755943647102466, std: 0.02
+Epoch 55
+train loss mean: 0.05861423850550266, std: 0.03
+valid loss mean: 0.05969408772225621, std: 0.02
+Epoch 56
+train loss mean: 0.059812108194176664, std: 0.03
+valid loss mean: 0.06054951814062233, std: 0.03
+Epoch 57
+train loss mean: 0.05930451266913714, std: 0.02
+valid loss mean: 0.06297780252710174, std: 0.02
+Epoch 58
+train loss mean: 0.05346309270955132, std: 0.02
+valid loss mean: 0.0883971494681473, std: 0.03
+Epoch 59
+train loss mean: 0.06046742781952113, std: 0.03
+valid loss mean: 0.1265367895742006, std: 0.03
+Epoch 60
+train loss mean: 0.06675741050816225, std: 0.03
+valid loss mean: 0.052568296949037266, std: 0.02
+Epoch 61
+train loss mean: 0.05292631358934377, std: 0.02
+valid loss mean: 0.05348446228411756, std: 0.02
+Epoch 62
+train loss mean: 0.05172782817375874, std: 0.02
+valid loss mean: 0.050868228525866435, std: 0.02
+Epoch 63
+train loss mean: 0.04900529285234784, std: 0.02
+valid loss mean: 0.06013335846364498, std: 0.02
+Epoch 64
+train loss mean: 0.052686710156009585, std: 0.02
+valid loss mean: 0.0552764088858532, std: 0.02
+Epoch 65
+train loss mean: 0.07018826082125752, std: 0.03
+valid loss mean: 0.06415515885794465, std: 0.02
+Epoch 66
+train loss mean: 0.05993159028874365, std: 0.03
+valid loss mean: 0.06854578067513206, std: 0.03
+Epoch 67
+train loss mean: 0.05802321407810121, std: 0.02
+valid loss mean: 0.05451100406861758, std: 0.02
+Epoch 68
+train loss mean: 0.055206708699286344, std: 0.02
+valid loss mean: 0.062360605272122574, std: 0.02
+Epoch 69
+train loss mean: 0.05663417316527067, std: 0.02
+valid loss mean: 0.09847069682576988, std: 0.03
+Epoch 70
+train loss mean: 0.05494180944062279, std: 0.02
+valid loss mean: 0.058986905820762055, std: 0.02
+Epoch 71
+train loss mean: 0.054897606713016946, std: 0.02
+valid loss mean: 0.06639909888087195, std: 0.03
+Epoch 72
+train loss mean: 0.054356810140484824, std: 0.02
+valid loss mean: 0.054252095673751985, std: 0.02
+Epoch 73
+train loss mean: 0.05696153183450956, std: 0.02
+valid loss mean: 0.08671050240533261, std: 0.03
+Epoch 74
+train loss mean: 0.05592526702634142, std: 0.02
+valid loss mean: 0.0642921829808362, std: 0.03
+Epoch 75
+train loss mean: 0.05218672141722755, std: 0.02
+valid loss mean: 0.06201692246183564, std: 0.02
+Epoch 76
+train loss mean: 0.05699338278772231, std: 0.02
+valid loss mean: 0.058388636388544794, std: 0.02
+Epoch 77
+train loss mean: 0.051112921334089276, std: 0.02
+valid loss mean: 0.0543882687917993, std: 0.02
+Epoch 78
+train loss mean: 0.05134121894635662, std: 0.02
+valid loss mean: 0.060074766649852826, std: 0.03
+Epoch 79
+train loss mean: 0.050888952436650585, std: 0.02
+valid loss mean: 0.05669743769295231, std: 0.02
+Epoch 80
+train loss mean: 0.049761307370029165, std: 0.02
+valid loss mean: 0.06104858266779139, std: 0.03
+Epoch 81
+train loss mean: 0.049254986228878625, std: 0.02
+valid loss mean: 0.05562896868567678, std: 0.02
+Epoch 82
+train loss mean: 0.05060546233982383, std: 0.02
+valid loss mean: 0.052307769231781175, std: 0.02
+Epoch 83
+train loss mean: 0.04683147495735191, std: 0.02
+valid loss mean: 0.055715866375101515, std: 0.02
+Epoch 84
+train loss mean: 0.048984151322416916, std: 0.02
+valid loss mean: 0.05170414651024945, std: 0.02
+Epoch 85
+train loss mean: 0.04729940238113175, std: 0.02
+valid loss mean: 0.061916650096072424, std: 0.02
+Epoch 86
+train loss mean: 0.04755893063558611, std: 0.02
+valid loss mean: 0.057314038500661336, std: 0.02
+Epoch 87
+train loss mean: 0.04660103966420639, std: 0.02
+valid loss mean: 0.048946714853938623, std: 0.02
+Epoch 88
+train loss mean: 0.04484414696291892, std: 0.02
+valid loss mean: 0.05281515188420875, std: 0.02
+Epoch 89
+train loss mean: 0.04530620452819649, std: 0.02
+valid loss mean: 0.05438661002377166, std: 0.02
+Epoch 90
+train loss mean: 0.043963998455755014, std: 0.02
+valid loss mean: 0.05055310588943053, std: 0.02
+Epoch 91
+train loss mean: 0.043646215555999804, std: 0.02
+valid loss mean: 0.05205386815757691, std: 0.02
+Epoch 92
+train loss mean: 0.045350835708800906, std: 0.02
+valid loss mean: 0.05346727001044569, std: 0.02
+Epoch 93
+train loss mean: 0.04518236830540581, std: 0.02
+valid loss mean: 0.0595338031932523, std: 0.02
+Epoch 94
+train loss mean: 0.04518612063194285, std: 0.02
+valid loss mean: 0.053775211029886444, std: 0.03
+Epoch 95
+train loss mean: 0.040496411471220545, std: 0.02
+valid loss mean: 0.04815196990966797, std: 0.02
+Epoch 96
+train loss mean: 0.043529794144327054, std: 0.02
+valid loss mean: 0.05215772724698616, std: 0.02
+Epoch 97
+train loss mean: 0.04121502982954422, std: 0.02
+valid loss mean: 0.04860876762319969, std: 0.02
+Epoch 98
+train loss mean: 0.04109518549510997, std: 0.02
+valid loss mean: 0.05203724336586421, std: 0.02
+Epoch 99
+train loss mean: 0.04123864046850069, std: 0.02
+valid loss mean: 0.05026406167617327, std: 0.02
+Epoch 100
+train loss mean: 0.03797277368181302, std: 0.02
+valid loss mean: 0.055807263295673114, std: 0.02
+Epoch 101
+train loss mean: 0.03779747806667925, std: 0.02
+valid loss mean: 0.041871051987798155, std: 0.02
+Epoch 102
+train loss mean: 0.033816814991439174, std: 0.01
+valid loss mean: 0.03945011875438917, std: 0.02
+Epoch 103
+train loss mean: 0.0344820672055026, std: 0.01
+valid loss mean: 0.04048418069753466, std: 0.02
+Epoch 104
+train loss mean: 0.03181694122867848, std: 0.01
+valid loss mean: 0.05092108947566793, std: 0.02
+Epoch 105
+train loss mean: 0.029795590615245754, std: 0.01
+valid loss mean: 0.03206358956102329, std: 0.01
+Epoch 106
+train loss mean: 0.026834513551505384, std: 0.01
+valid loss mean: 0.03561404626816511, std: 0.01
+Epoch 107
+train loss mean: 0.025341353418227443, std: 0.01
+valid loss mean: 0.028455059444885467, std: 0.01
+Epoch 108
+train loss mean: 0.023569736311847934, std: 0.01
+valid loss mean: 0.03996782589562332, std: 0.01
+Epoch 109
+train loss mean: 0.022280778116853295, std: 0.01
+valid loss mean: 0.03680003182137314, std: 0.02
+Epoch 110
+train loss mean: 0.02093828676971133, std: 0.01
+valid loss mean: 0.034157251208266126, std: 0.01
+Epoch 111
+train loss mean: 0.020786144820872893, std: 0.01
+valid loss mean: 0.025924435592716254, std: 0.01
+Epoch 112
+train loss mean: 0.019223249375173255, std: 0.01
+valid loss mean: 0.02589222676816243, std: 0.01
+Epoch 113
+train loss mean: 0.018761469115374865, std: 0.01
+valid loss mean: 0.026723575047394144, std: 0.01
+Epoch 114
+train loss mean: 0.018651318987329562, std: 0.01
+valid loss mean: 0.025884627293842503, std: 0.01
+Epoch 115
+train loss mean: 0.017523322179132772, std: 0.01
+valid loss mean: 0.022918392703691615, std: 0.01
+Epoch 116
+train loss mean: 0.016588592477990483, std: 0.01
+valid loss mean: 0.027935757077758826, std: 0.01
+Epoch 117
+train loss mean: 0.016645583580666316, std: 0.01
+valid loss mean: 0.02091248579842003, std: 0.01
+Epoch 118
+train loss mean: 0.015851900765036574, std: 0.01
+valid loss mean: 0.022902134393306472, std: 0.01
+Epoch 119
+train loss mean: 0.015164615572458077, std: 0.00
+valid loss mean: 0.023303680758498892, std: 0.01
+Epoch 120
+train loss mean: 0.01525379376887472, std: 0.01
+valid loss mean: 0.020479800321067436, std: 0.01
+Epoch 121
+train loss mean: 0.014148057803712383, std: 0.00
+valid loss mean: 0.0196928073168744, std: 0.01
+Epoch 122
+train loss mean: 0.013861049621918066, std: 0.00
+valid loss mean: 0.020596030681052164, std: 0.01
+Epoch 123
+train loss mean: 0.013353549186586442, std: 0.00
+valid loss mean: 0.020121282225922694, std: 0.01
+Epoch 124
+train loss mean: 0.012938034701200123, std: 0.00
+valid loss mean: 0.023910195059791396, std: 0.01
+Epoch 125
+train loss mean: 0.013201268861059122, std: 0.00
+valid loss mean: 0.0198761969451097, std: 0.01
+Epoch 126
+train loss mean: 0.012613396029250172, std: 0.00
+valid loss mean: 0.018513858795779038, std: 0.01
+Epoch 127
+train loss mean: 0.011978198241576284, std: 0.00
+valid loss mean: 0.02582708169717955, std: 0.01
+Epoch 128
+train loss mean: 0.012330070324799793, std: 0.00
+valid loss mean: 0.018981292384051825, std: 0.01
+Epoch 129
+train loss mean: 0.011974289887835702, std: 0.00
+valid loss mean: 0.018960192516634736, std: 0.01
+Epoch 130
+train loss mean: 0.011071373677873862, std: 0.00
+valid loss mean: 0.018638884913930787, std: 0.01
+Epoch 131
+train loss mean: 0.011521223101564153, std: 0.00
+valid loss mean: 0.019644794089696074, std: 0.01
+Epoch 132
+train loss mean: 0.011289202541246742, std: 0.00
+valid loss mean: 0.017306032897079292, std: 0.01
+Epoch 133
+train loss mean: 0.010776246761245107, std: 0.00
+valid loss mean: 0.0167133693046915, std: 0.01
+Epoch 134
+train loss mean: 0.01055242571544772, std: 0.00
+valid loss mean: 0.018119558249894953, std: 0.01
+Epoch 135
+train loss mean: 0.010315728359883595, std: 0.00
+valid loss mean: 0.018439566498457252, std: 0.01
+Epoch 136
+train loss mean: 0.0105662653250564, std: 0.00
+valid loss mean: 0.02069636624117818, std: 0.01
+Epoch 137
+train loss mean: 0.009610011367807666, std: 0.00
+valid loss mean: 0.02116134126753181, std: 0.01
+Epoch 138
+train loss mean: 0.009912812987532087, std: 0.00
+valid loss mean: 0.01756565029956872, std: 0.01
+Epoch 139
+train loss mean: 0.009554340116523518, std: 0.00
+valid loss mean: 0.01600308149840824, std: 0.01
+Epoch 140
+train loss mean: 0.009723471636566039, std: 0.00
+valid loss mean: 0.01750811998720599, std: 0.01
+Epoch 141
+train loss mean: 0.009060943189696103, std: 0.00
+valid loss mean: 0.01671939832453109, std: 0.01
+Epoch 142
+train loss mean: 0.00928303593501984, std: 0.00
+valid loss mean: 0.01641323184594512, std: 0.01
+Epoch 143
+train loss mean: 0.008872026737924376, std: 0.00
+valid loss mean: 0.01592144303471793, std: 0.01
+Epoch 144
+train loss mean: 0.00856646043415778, std: 0.00
+valid loss mean: 0.01760890833514778, std: 0.01
+Epoch 145
+train loss mean: 0.008666656359271732, std: 0.00
+valid loss mean: 0.016387110959172627, std: 0.01
+Epoch 146
+train loss mean: 0.008802458507282113, std: 0.00
+valid loss mean: 0.015050201900774919, std: 0.01
+Epoch 147
+train loss mean: 0.008730256057227265, std: 0.00
+valid loss mean: 0.01592625470101079, std: 0.01
+Epoch 148
+train loss mean: 0.008369774492122901, std: 0.00
+valid loss mean: 0.01591992749585004, std: 0.01
+Epoch 149
+train loss mean: 0.008004801827454996, std: 0.00
+valid loss mean: 0.015477962514880714, std: 0.01
+Epoch 150
+train loss mean: 0.008031115432208526, std: 0.00
+valid loss mean: 0.015214306325946428, std: 0.01
+Epoch 151
+train loss mean: 0.008127707896006857, std: 0.00
+valid loss mean: 0.015095305240041093, std: 0.00
+Epoch 152
+train loss mean: 0.007897697422586515, std: 0.00
+valid loss mean: 0.016353648303288826, std: 0.01
+Epoch 153
+train loss mean: 0.007723944877904511, std: 0.00
+valid loss mean: 0.01819718264844976, std: 0.01
+Epoch 154
+train loss mean: 0.007920638699932191, std: 0.00
+valid loss mean: 0.017017144774664428, std: 0.01
+Epoch 155
+train loss mean: 0.007635133515229215, std: 0.00
+valid loss mean: 0.014796009116299167, std: 0.01
+Epoch 156
+train loss mean: 0.007435222095001244, std: 0.00
+valid loss mean: 0.015326450071945975, std: 0.01
+Epoch 157
+train loss mean: 0.007418540579651644, std: 0.00
+valid loss mean: 0.016572754812438653, std: 0.01
+Epoch 158
+train loss mean: 0.007721650283114461, std: 0.00
+valid loss mean: 0.015546723675642964, std: 0.00
+Epoch 159
+train loss mean: 0.007305831412790332, std: 0.00
+valid loss mean: 0.015285228432120778, std: 0.01
+Epoch 160
+train loss mean: 0.0072823624296704985, std: 0.00
+valid loss mean: 0.015487696197402628, std: 0.01
+Epoch 161
+train loss mean: 0.007053082171704865, std: 0.00
+valid loss mean: 0.01841645348298399, std: 0.01
+Epoch 162
+train loss mean: 0.007384290147717752, std: 0.00
+valid loss mean: 0.016178187560525876, std: 0.01
+Epoch 163
+train loss mean: 0.0069770156113085095, std: 0.00
+valid loss mean: 0.013872378488083053, std: 0.01
+Epoch 164
+train loss mean: 0.006862795840625367, std: 0.00
+valid loss mean: 0.016750446125817827, std: 0.01
+Epoch 165
+train loss mean: 0.006785489264652579, std: 0.00
+valid loss mean: 0.014547458543336089, std: 0.01
+Epoch 166
+train loss mean: 0.0069209435678639275, std: 0.00
+valid loss mean: 0.015845304938575513, std: 0.00
+Epoch 167
+train loss mean: 0.006707613753757166, std: 0.00
+valid loss mean: 0.014617623183640498, std: 0.00
+Epoch 168
+train loss mean: 0.006765587990099709, std: 0.00
+valid loss mean: 0.014044331687302151, std: 0.01
+Epoch 169
+train loss mean: 0.00671997949798887, std: 0.00
+valid loss mean: 0.014212972437373446, std: 0.01
+Epoch 170
+train loss mean: 0.006851762714433277, std: 0.00
+valid loss mean: 0.015214960291227209, std: 0.01
+Epoch 171
+train loss mean: 0.006371549339016933, std: 0.00
+valid loss mean: 0.012998598898890653, std: 0.00
+Epoch 172
+train loss mean: 0.00650956007389876, std: 0.00
+valid loss mean: 0.01502464772378908, std: 0.00
+Epoch 173
+train loss mean: 0.006425724889034639, std: 0.00
+valid loss mean: 0.014314346239442312, std: 0.00
+Epoch 174
+train loss mean: 0.006486559362000156, std: 0.00
+valid loss mean: 0.014320056366769574, std: 0.00
+Epoch 175
+train loss mean: 0.00632186565537028, std: 0.00
+valid loss mean: 0.014447700137956232, std: 0.01
+Epoch 176
+train loss mean: 0.006378565573351023, std: 0.00
+valid loss mean: 0.013949732378691057, std: 0.01
+Epoch 177
+train loss mean: 0.006364338299326464, std: 0.00
+valid loss mean: 0.014785755838302873, std: 0.00
+Epoch 178
+train loss mean: 0.00630658789130742, std: 0.00
+valid loss mean: 0.014287117638778461, std: 0.01
+Epoch 179
+train loss mean: 0.006311102759115353, std: 0.00
+valid loss mean: 0.013973689260833625, std: 0.00
+Epoch 180
+train loss mean: 0.006310848344931613, std: 0.00
+valid loss mean: 0.013950931002633482, std: 0.00
+Epoch 181
+train loss mean: 0.006224330117323709, std: 0.00
+valid loss mean: 0.01552833788851394, std: 0.01
+Epoch 182
+train loss mean: 0.006425858342819318, std: 0.00
+valid loss mean: 0.014510474934042254, std: 0.00
+Epoch 183
+train loss mean: 0.006253689443859869, std: 0.00
+valid loss mean: 0.01398062298687387, std: 0.00
+Epoch 184
+train loss mean: 0.006194539794776433, std: 0.00
+valid loss mean: 0.013683894189381146, std: 0.00
+Epoch 185
+train loss mean: 0.005953009560994224, std: 0.00
+valid loss mean: 0.014118559458116187, std: 0.01
+Epoch 186
+train loss mean: 0.006011660096464221, std: 0.00
+valid loss mean: 0.015044705134733945, std: 0.00
+Epoch 187
+train loss mean: 0.005901222133975543, std: 0.00
+valid loss mean: 0.01413718109974001, std: 0.00
+Epoch 188
+train loss mean: 0.006007784447760996, std: 0.00
+valid loss mean: 0.014458242344045186, std: 0.01
+Epoch 189
+train loss mean: 0.0060041040965651505, std: 0.00
+valid loss mean: 0.013662264340474635, std: 0.01
+Epoch 190
+train loss mean: 0.006028821037993013, std: 0.00
+valid loss mean: 0.014446577776364888, std: 0.01
+Epoch 191
+train loss mean: 0.005859996069468067, std: 0.00
+valid loss mean: 0.01368840253628979, std: 0.00
+Epoch 192
+train loss mean: 0.0059427066042483925, std: 0.00
+valid loss mean: 0.014475069716101206, std: 0.00
+Epoch 193
+train loss mean: 0.005971609538108735, std: 0.00
+valid loss mean: 0.013395374192844462, std: 0.01
+Epoch 194
+train loss mean: 0.0056204011574566, std: 0.00
+valid loss mean: 0.01360534488140971, std: 0.00
+Epoch 195
+train loss mean: 0.005677246470506231, std: 0.00
+valid loss mean: 0.013715022550070588, std: 0.00
+Epoch 196
+train loss mean: 0.005716917385252382, std: 0.00
+valid loss mean: 0.014786304646654974, std: 0.00
+Epoch 197
+train loss mean: 0.005763139726292945, std: 0.00
+valid loss mean: 0.013782784077515708, std: 0.00
+Epoch 198
+train loss mean: 0.005642677420292964, std: 0.00
+valid loss mean: 0.014319082026523126, std: 0.01
+Epoch 199
+train loss mean: 0.005698898236942059, std: 0.00
+valid loss mean: 0.014789127355700806, std: 0.01
+Epoch 200
+train loss mean: 0.005690784533759077, std: 0.00
+valid loss mean: 0.01395152812187053, std: 0.01
+Epoch 201
+train loss mean: 0.005684237896526109, std: 0.00
+valid loss mean: 0.01406564652518947, std: 0.01
+Epoch 202
+train loss mean: 0.0056217067908428744, std: 0.00
+valid loss mean: 0.013826410598534195, std: 0.00
+Epoch 203
+train loss mean: 0.005718203512449821, std: 0.00
+valid loss mean: 0.014678335318318273, std: 0.01
+Epoch 204
+train loss mean: 0.005655997059123959, std: 0.00
+valid loss mean: 0.013941200167129311, std: 0.00
+Epoch 205
+train loss mean: 0.005541378317099667, std: 0.00
+valid loss mean: 0.014236961255628096, std: 0.00
+Epoch 206
+train loss mean: 0.005510282171555533, std: 0.00
+valid loss mean: 0.014108124495590036, std: 0.00
+Epoch 207
+train loss mean: 0.0054550399713798195, std: 0.00
+valid loss mean: 0.014608473605417375, std: 0.00
+Epoch 208
+train loss mean: 0.005542469376831979, std: 0.00
+valid loss mean: 0.013556883894378625, std: 0.01
+Epoch 209
+train loss mean: 0.005501374175693996, std: 0.00
+valid loss mean: 0.014021569326567122, std: 0.00
+Epoch 210
+train loss mean: 0.0054293159844387255, std: 0.00
+valid loss mean: 0.014008410876216014, std: 0.01
+Epoch 211
+train loss mean: 0.005415251000343772, std: 0.00
+valid loss mean: 0.013831982076686771, std: 0.00
+Epoch 212
+train loss mean: 0.005475198678549624, std: 0.00
+valid loss mean: 0.013979627208524867, std: 0.01
+Epoch 213
+train loss mean: 0.0056619619669024636, std: 0.00
+valid loss mean: 0.014114871927643125, std: 0.00
+Epoch 214
+train loss mean: 0.005398890922336789, std: 0.00
+valid loss mean: 0.013752234239084057, std: 0.00
+Epoch 215
+train loss mean: 0.005273411725229489, std: 0.00
+valid loss mean: 0.01440104791788455, std: 0.00
+Epoch 216
+train loss mean: 0.005370929683865366, std: 0.00
+valid loss mean: 0.013975714286199854, std: 0.00
+Epoch 217
+train loss mean: 0.005362284375343494, std: 0.00
+valid loss mean: 0.014083449546059099, std: 0.00
+Epoch 218
+train loss mean: 0.005422954303965329, std: 0.00
+valid loss mean: 0.014248157636250687, std: 0.01
+Epoch 219
+train loss mean: 0.005393325390216119, std: 0.00
+valid loss mean: 0.013918494269298979, std: 0.01
+Epoch 220
+train loss mean: 0.005299596410122014, std: 0.00
+valid loss mean: 0.01385468535738278, std: 0.01
+Epoch 221
+train loss mean: 0.005287532859152841, std: 0.00
+valid loss mean: 0.01428819322793544, std: 0.00
+Epoch 222
+train loss mean: 0.005426126581053445, std: 0.00
+valid loss mean: 0.013907257196363768, std: 0.01
+Epoch 223
+train loss mean: 0.005285443421620541, std: 0.00
+valid loss mean: 0.014158029792995392, std: 0.01
+Epoch 224
+train loss mean: 0.005376248432234108, std: 0.00
+valid loss mean: 0.0142084852308978, std: 0.00
+Epoch 225
+train loss mean: 0.005230808043629377, std: 0.00
+valid loss mean: 0.013571003169009957, std: 0.00
+Epoch 226
+train loss mean: 0.005331661592622449, std: 0.00
+valid loss mean: 0.014118455250193424, std: 0.00
+Epoch 227
+train loss mean: 0.005257714645725167, std: 0.00
+valid loss mean: 0.014150132737535088, std: 0.00
+Epoch 228
+train loss mean: 0.005340580679308957, std: 0.00
+valid loss mean: 0.014184629915965885, std: 0.00
+Epoch 229
+train loss mean: 0.005446786348133566, std: 0.00
+valid loss mean: 0.014328413878720773, std: 0.01
+Epoch 230
+train loss mean: 0.005311909392420314, std: 0.00
+valid loss mean: 0.014099494895980329, std: 0.00
+Epoch 231
+train loss mean: 0.005231104305984374, std: 0.00
+valid loss mean: 0.0138443560940744, std: 0.01
+Epoch 232
+train loss mean: 0.005252540426629924, std: 0.00
+valid loss mean: 0.013847602935083494, std: 0.00
+Epoch 233
+train loss mean: 0.0052271732826254325, std: 0.00
+valid loss mean: 0.014169953663279361, std: 0.01
+Epoch 234
+train loss mean: 0.005213714696879605, std: 0.00
+valid loss mean: 0.014116739412133076, std: 0.00
+Epoch 235
+train loss mean: 0.005276004044885586, std: 0.00
+valid loss mean: 0.014150579318498509, std: 0.00
+Epoch 236
+train loss mean: 0.00528134463332638, std: 0.00
+valid loss mean: 0.014098743454234886, std: 0.00
+Epoch 237
+train loss mean: 0.005311523063643696, std: 0.00
+valid loss mean: 0.014485953764730617, std: 0.01
+Epoch 238
+train loss mean: 0.005313103262915047, std: 0.00
+valid loss mean: 0.01439003346346413, std: 0.01
+Epoch 239
+train loss mean: 0.005202457568089584, std: 0.00
+valid loss mean: 0.013983467263700087, std: 0.00
+Epoch 240
+train loss mean: 0.005413967365967835, std: 0.00
+valid loss mean: 0.013872208114996364, std: 0.01
+Epoch 241
+train loss mean: 0.00520138839583197, std: 0.00
+valid loss mean: 0.014061751610399046, std: 0.01
+Epoch 242
+train loss mean: 0.005176257453635781, std: 0.00
+valid loss mean: 0.01412291375660821, std: 0.00
+Epoch 243
+train loss mean: 0.005171675147198721, std: 0.00
+valid loss mean: 0.013789553649110508, std: 0.00
+Epoch 244
+train loss mean: 0.005222467698636437, std: 0.00
+valid loss mean: 0.014441827046861755, std: 0.00
+Epoch 245
+train loss mean: 0.005231757448919252, std: 0.00
+valid loss mean: 0.014258043970205362, std: 0.00
+Epoch 246
+train loss mean: 0.005270477006501869, std: 0.00
+valid loss mean: 0.014617194669156135, std: 0.01
+Epoch 247
+train loss mean: 0.005229465978521251, std: 0.00
+valid loss mean: 0.01441681899625478, std: 0.01
+Epoch 248
+train loss mean: 0.005122767903557616, std: 0.00
+valid loss mean: 0.0141548448584125, std: 0.01
+Epoch 249
+train loss mean: 0.005174400326712224, std: 0.00
+valid loss mean: 0.014444352805473005, std: 0.01
+Epoch 250
+train loss mean: 0.0051177453952367434, std: 0.00
+valid loss mean: 0.014079629013291265, std: 0.01
