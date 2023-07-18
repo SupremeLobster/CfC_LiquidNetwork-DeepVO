@@ -1,5 +1,5 @@
 # DeepVO w/ CfC Liquid Time-Constant Network (LTC Network)
-An implementation of DeepVO replacing the RNN module by the CfC Liquid Time Network. This is meant as an experiment
+An implementation of DeepVO replacing the RNN module with the CfC Liquid Time Network. This is meant as an experiment
 
 ## References
 - [DeepVO paper](https://ieeexplore.ieee.org/document/7989236/)
